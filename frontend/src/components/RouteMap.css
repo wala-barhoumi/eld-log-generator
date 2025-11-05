@@ -1,0 +1,119 @@
+.route-map-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.leaflet-container {
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.popup-content p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.stops-list {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.stops-list h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.stops-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stop-item {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  transition: all 0.2s;
+}
+
+.stop-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+}
+
+.stop-number {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.stop-details {
+  flex: 1;
+}
+
+.stop-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.stop-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.stop-type {
+  text-transform: capitalize;
+  background: #e3f2fd;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  color: #1976d2;
+}
+
+.route-legs {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.route-legs h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.leg-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leg-distance {
+  font-weight: bold;
+  color: #667eea;
+}
